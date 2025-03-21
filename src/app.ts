@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { Request, Response } from 'express';
 
 import userRoutes from './models/staff/routes';
 import shopRoutes from './models/shop/shop.routes'; 
@@ -22,6 +22,9 @@ app.use('/backstage/departments', departmentRoutes)
 app.use('/backstage/commodity', commodityRouter); // 商品路由
 app.use('/backstage/performance', PerformanceRouter);
 app.use('/backstage/departmentPerformance', DepartmentPerformanceRouter);
+app.use('/', (req: Request, res: Response) => {
+  res.send('Hello word')
+})
 // 连接数据库
 connectDB();
 
