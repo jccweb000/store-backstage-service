@@ -22,4 +22,5 @@ router.post('/list', fetchUserList);
 router.get('/search', search);
 router.post('/export', exportStaffs);
 router.get('/', getAllUsers); // 获取所有用户
+
 export default router;
