@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'production', // 设置为 'development' 或 'production'
-  entry: './src/app.ts', // 入口文件
+  entry: './src/index.ts', // 入口文件
   target: 'node', // 指定打包目标为 Node.js
   output: {
     filename: 'bundle.js', // 输出文件名
